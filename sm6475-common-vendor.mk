@@ -386,6 +386,7 @@ PRODUCT_PACKAGES += \
     libaudio_log_utils \
     libaudiochargerlistener \
     libaudioplatformconverter.qti \
+    libaudioserviceexampleimpl \
     libbatterylistener \
     libbluetooth_audio_session_aidl_qti \
     libbluetooth_audio_session_qti \

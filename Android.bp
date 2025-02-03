@@ -3156,6 +3156,54 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libaudioserviceexampleimpl",
+    owner: "motorola",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libaudioserviceexampleimpl.so",
+            ],
+            shared_libs: [
+                "android.hardware.bluetooth.audio-V5-ndk",
+                "android.hardware.audio.core.sounddose-V3-ndk",
+                "android.hardware.audio.core-V3-ndk",
+                "android.media.audio.common.types-V3-ndk",
+                "libalsautilsv2",
+                "libaudioaidlcommon",
+                "libbase",
+                "libbinder_ndk",
+                "libcutils",
+                "libfmq",
+                "libnbaio_mono",
+                "libtinyalsav2",
+                "libutils",
+                "libxml2",
+                "android.hardware.common-V2-ndk",
+                "android.hardware.common.fmq-V1-ndk",
+                "android.hardware.bluetooth.audio-impl",
+                "libaudio_aidl_conversion_common_ndk",
+                "libaudioutils",
+                "libbluetooth_audio_session_aidl",
+                "liblog",
+                "libmedia_helper",
+                "libmediautils_vendor",
+                "libstagefright_foundation",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libbatterylistener",
     owner: "motorola",
     strip: {
