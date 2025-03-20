@@ -283,6 +283,7 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_PACKAGES += \
     aidl_hdcp_interface-V1-ndk \
+    android.hardware.bluetooth.audio-impl_prebuilt \
     btaudio_offload_if \
     com.qualcomm.qti.dpm.api@1.0_vendor \
     deviceInfoServiceModuleNr \
@@ -383,11 +384,13 @@ PRODUCT_PACKAGES += \
     libaualgo_azp_component \
     libaualgo_azp_wrapper \
     libaualgo_foundation \
+    libaudio_aidl_conversion_common_ndk_prebuilt \
     libaudio_log_utils \
     libaudiochargerlistener \
     libaudioplatformconverter.qti \
     libaudioserviceexampleimpl \
     libbatterylistener \
+    libbluetooth_audio_session_aidl_prebuilt \
     libbluetooth_audio_session_aidl_qti \
     libbluetooth_audio_session_qti \
     libbluetooth_audio_session_qti_2_1 \
