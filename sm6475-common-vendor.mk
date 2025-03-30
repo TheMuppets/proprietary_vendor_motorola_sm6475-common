@@ -98,7 +98,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/sm6475-common/proprietary/vendor/etc/init/android.hardware.gatekeeper-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.gatekeeper-service-qti.rc \
     vendor/motorola/sm6475-common/proprietary/vendor/etc/init/android.hardware.identity-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.identity-service-qti.rc \
     vendor/motorola/sm6475-common/proprietary/vendor/etc/init/android.hardware.security.keymint-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.security.keymint-service-qti.rc \
-    vendor/motorola/sm6475-common/proprietary/vendor/etc/init/audiohalservice_qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/audiohalservice_qti.rc \
     vendor/motorola/sm6475-common/proprietary/vendor/etc/init/cnd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/cnd.rc \
     vendor/motorola/sm6475-common/proprietary/vendor/etc/init/com.qualcomm.qti.wifidisplayhal@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/com.qualcomm.qti.wifidisplayhal@1.0-service.rc \
     vendor/motorola/sm6475-common/proprietary/vendor/etc/init/dataadpl.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/dataadpl.rc \
@@ -133,7 +132,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/sm6475-common/proprietary/vendor/etc/init/tlpd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/tlpd.rc \
     vendor/motorola/sm6475-common/proprietary/vendor/etc/init/vendor.dpmd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.dpmd.rc \
     vendor/motorola/sm6475-common/proprietary/vendor/etc/init/vendor.qti.adsprpc-guestos-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.adsprpc-guestos-service.rc \
-    vendor/motorola/sm6475-common/proprietary/vendor/etc/init/vendor.qti.audio-adsprpc-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.audio-adsprpc-service.rc \
     vendor/motorola/sm6475-common/proprietary/vendor/etc/init/vendor.qti.cdsprpc-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.cdsprpc-service.rc \
     vendor/motorola/sm6475-common/proprietary/vendor/etc/init/vendor.qti.diag_userdebug.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.diag_userdebug.rc \
     vendor/motorola/sm6475-common/proprietary/vendor/etc/init/vendor.qti.hardware.alarm-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.alarm-service.rc \
@@ -302,7 +300,6 @@ PRODUCT_PACKAGES += \
     libaudiocorehal.qti \
     libaudioeffecthal.qti \
     libqtigatekeeper \
-    libsoundtriggerhal.qti \
     mbedtls_qti \
     vendor.qti.hardware.alarm-impl \
     vendor.qti.hardware.bluetooth_sar@aidl-impl \
@@ -374,12 +371,6 @@ PRODUCT_PACKAGES += \
     libadropbox \
     libadsp_default_listener \
     libadsprpc \
-    libagm \
-    libagm_compress_plugin \
-    libagm_mixer_plugin \
-    libagm_pcm_plugin \
-    libagmclient \
-    libagmipcservice \
     libar-pal \
     libaualgo_azp_component \
     libaualgo_azp_wrapper \
@@ -389,7 +380,6 @@ PRODUCT_PACKAGES += \
     libaudiochargerlistener \
     libaudioplatformconverter.qti \
     libaudioserviceexampleimpl \
-    libbatterylistener \
     libbluetooth_audio_session_aidl_prebuilt \
     libbluetooth_audio_session_aidl_qti \
     libbluetooth_audio_session_qti \
@@ -430,14 +420,12 @@ PRODUCT_PACKAGES += \
     libext_tflite_c \
     libfastcvdsp_stub \
     libfastcvopt \
-    libfmpal \
     libgdtap \
     libgpt \
     libgpudataproducer \
     libgsl \
     libhdr_stub \
     libhdr_tm \
-    libhfp_pal \
     libhta_hexagon_runtime_qnn \
     libidl \
     libintervmipc \
@@ -473,8 +461,6 @@ PRODUCT_PACKAGES += \
     liblowi_common \
     liblowi_wifihal \
     liblqe \
-    liblx-ar_util \
-    liblx-osal \
     libmcs \
     libmdmcutback \
     libmdmdetect \
@@ -500,7 +486,6 @@ PRODUCT_PACKAGES += \
     libops \
     libos \
     libpal_net_if \
-    libpalipcservice \
     libpdmapper \
     libpdnotifier \
     libperipheral_client \
@@ -603,7 +588,6 @@ PRODUCT_PACKAGES += \
     libsmemlog \
     libsnapdragoncolor-manager \
     libsnapdragoncolor-qdcm \
-    libsndcardparser \
     libsns_device_mode_stub \
     libsns_direct_channel_stub \
     libsns_registry_skel \
@@ -716,7 +700,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.gnss-V7-ndk \
     vendor.qti.gnss-service \
     vendor.qti.hardware.ListenSoundModelAidl-V1-ndk \
-    vendor.qti.hardware.agm-V1-ndk \
     vendor.qti.hardware.alarm-V1-ndk \
     vendor.qti.hardware.bluetooth_sar-V1-ndk \
     vendor.qti.hardware.bttpi-V3-ndk \
@@ -739,7 +722,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.fm-V1-ndk \
     vendor.qti.hardware.fm@1.0 \
     vendor.qti.hardware.mwqemadapteraidlservice-V1-ndk \
-    vendor.qti.hardware.pal-V1-ndk \
     vendor.qti.hardware.qseecom-V1-ndk \
     vendor.qti.hardware.qteeconnector-V1-ndk \
     vendor.qti.hardware.qteeconnector@1.0 \
@@ -922,7 +904,6 @@ PRODUCT_PACKAGES += \
     qspa-modem.xml \
     qtiradio-saidl.xml \
     snapdragon_services.xml \
-    soundtrigger.qti.xml \
     vendor-qti-hardware-sensorscalibrate.xml \
     vendor.qti.gnss-service.xml \
     vendor.qti.hardware.alarm.xml \
@@ -949,7 +930,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.qccsyshal_aidl-service.xml \
     adpl \
     adsprpcd \
-    audioadsprpcd \
     cdsprpcd \
     charge_only_mode \
     cnd \
@@ -962,7 +942,6 @@ PRODUCT_PACKAGES += \
     android.hardware.gatekeeper-service-qti \
     android.hardware.identity-service-qti \
     android.hardware.security.keymint-service-qti \
-    audiohalservice.qti \
     qcrilNrd \
     vendor.qti.hardware.alarm-service \
     vendor.qti.hardware.capabilityconfigstore-service \
