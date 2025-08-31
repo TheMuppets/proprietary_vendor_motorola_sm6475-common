@@ -889,7 +889,6 @@ PRODUCT_PACKAGES += \
     android.hardware.secure_element.xml \
     android.hardware.security.keymint-service-qti.xml \
     atfwd-saidl.xml \
-    audioeffectservice_qti.xml \
     bluetooth_hci.xml \
     bluetooth_sar.xml \
     bttpi-saidl.xml \
@@ -900,7 +899,6 @@ PRODUCT_PACKAGES += \
     deviceinfo-saidl.xml \
     dpm-saidl.xml \
     imsdcservice-saidl.xml \
-    manifest_audiocorehal_default.xml \
     manifest_btaudiocoreservices_qti.xml \
     manifest_identity_credential.xml \
     mwqem-saidl.xml \
